@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/icon.png" type="image/icon type">
+
+    <style>
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background-color: #E4F1FF;
+        }
+        .logo {
+            font-family: 'Shrikhand', cursive;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <h2 class="logo">SHOPP-E</h2>
+            <p class="lead">Customer Chekout</p>
+          </div>
+      
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mt-3 mb-3">
+                <span class="text-primary">Your cart has</span>
+                <span class="badge bg-primary rounded-pill">9 items</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Product 1</h6>
+                    <small class="text-body-secondary">Gel pen #G102</small>
+                  </div>
+                  <span class="text-body-secondary">$1</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Product 2</h6>
+                    <small class="text-body-secondary">Spiral notebook #SN332</small>
+                  </div>
+                  <span class="text-body-secondary">$2</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Product 3</h6>
+                    <small class="text-body-secondary">Pen holder</small>
+                  </div>
+                  <span class="text-body-secondary">$3</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product 4</h6>
+                      <small class="text-body-secondary">Bracelet #1021</small>
+                    </div>
+                    <span class="text-body-secondary">$4</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product 5</h6>
+                      <small class="text-body-secondary">Kid's wrist watch #21022</small>
+                    </div>
+                    <span class="text-body-secondary">$5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product 6</h6>
+                      <small class="text-body-secondary">Kid's sunglasses #35001</small>
+                    </div>
+                    <span class="text-body-secondary">$6</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product 7</h6>
+                      <small class="text-body-secondary">Cotton shirt</small>
+                    </div>
+                    <span class="text-body-secondary">$7</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product 8</h6>
+                      <small class="text-body-secondary">Leather wallet</small>
+                    </div>
+                    <span class="text-body-secondary">$8</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">Product 9</h6>
+                      <small class="text-body-secondary">Jeans pant</small>
+                    </div>
+                    <span class="text-body-secondary">$9</span>
+                  </li>
+                <li class="list-group-item d-flex justify-content-between bg-primary text-light">
+                  <div>
+                    <h6 class="my-0">Promo code</h6>
+                    <small>SHOPP-E Special discount</small>
+                  </div>
+                  <span class="text-light">−$7</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$38</strong>
+                </li>
+              </ul>
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Promo code" spellcheck="false" data-ms-editor="true">
+                  <button type="submit" class="btn btn-primary">Apply</button>
+                </div>
+              </form>
+              
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Billing details</h4>
+              <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="@yourName" value="" required="">
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="@yourLastName" value="" required="">
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Billing email</label>
+                    <input type="email" class="form-control" id="email" placeholder="your@mail.com">
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Billing address</label>
+                    <input type="text" class="form-control" id="address" placeholder="House / Aprtment # xyz" required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address2" class="form-label">Billing address 2 <span class="text-body-secondary">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="House / Aprtment # abc" spellcheck="false" data-ms-editor="true">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">Select...</option>
+                      <option>Pakistan</option>
+                    </select>
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state" required="">
+                      <option value="">Select...</option>
+                      <option>Karachi</option>
+                    </select>
+                  </div>
+      
+                  <div class="col-md-2">
+                    <label for="zip" class="form-label">Zip Code</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Save this information for next time</label>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h4 class="mb-3">Payment</h4>
+      
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                    <label class="form-check-label" for="debit">Debit card</label>
+                  </div>
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Complete name mentioned on card</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Valid credit card number</label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="Month" required="" spellcheck="false" data-ms-editor="true">
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="Year" required="" spellcheck="false" data-ms-editor="true">
+                    </div>
+                  </div>
+      
+                  <div class="col-md-2">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Proceed to checkout</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+          <p class="mb-1">© 2023 SHOPP-E</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
